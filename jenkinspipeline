@@ -1,11 +1,11 @@
 node {
     
-stage('stage 01 for clone java project') {
+stage('clone mahalogin java project') {
    git branch: 'main', url: 'https://github.com/ashisharyaa/today.git'
     
 }
     
-stage('stage 02 execute maven target') {
+stage('execute maven target') {
     sh 'mvn install'
     
 }
