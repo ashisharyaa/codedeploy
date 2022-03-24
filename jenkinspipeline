@@ -1,0 +1,13 @@
+node {
+    
+stage('stage 01 for clone java project') {
+   git branch: 'main', url: 'https://github.com/ashisharyaa/today.git'
+    
+}
+    
+stage('stage 02 execute maven target') {
+    sh 'mvn install'
+    
+}
+    
+}
