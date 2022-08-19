@@ -1,5 +1,9 @@
 pipeline{
     agent any
+    
+    environment{
+        PATH = "/bin:$PATH"
+    }
     stages{
         stage("GitCheckOut"){
             steps{
