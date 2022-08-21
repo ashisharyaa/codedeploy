@@ -27,9 +27,9 @@ pipeline{
                  sh """
                     scp -o StrictHostKeyChecking=no target/myweb.war ec2-user@172.31.88.163:/opt/tomcat9/webapps/
                     
-                    ssh  ec2-user@172.31.88.163 /opt/tomcat9/bin/shutdown.sh
+                    ssh  root@172.31.88.163 /opt/tomcat9/bin/shutdown.sh
                     
-                    ssh  ec2-user@172.31.88.163 /opt/tomcat9/bin/startup.sh
+                    ssh  root@172.31.88.163 /opt/tomcat9/bin/startup.sh
                     
                     """
                  }
