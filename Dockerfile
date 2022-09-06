@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Build Docker Image'){
             steps{
-                sh "docker build . -t myimage/mydocker0707/myrepository_07:${DOCKER_TAG}"
+                sh "docker build . -t mydocker0707/myrepository_07:${DOCKER_TAG}"
             }
         }
       }
